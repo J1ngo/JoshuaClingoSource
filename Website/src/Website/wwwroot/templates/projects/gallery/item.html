@@ -1,0 +1,19 @@
+﻿<div class="">    
+    <div class="gallery-category sans-text" ng-click="viewProject(project.id)">
+        <strong>Projects —</strong>#{{project.category}}
+    </div>
+    <div class="gallery-title sans-text">{{project.title}}</div>
+    <div layout layout-md="column" layout-sm="column">
+        <div flex="40" flex-md="100" flex-sm="100">
+            <img class="w-100 p-r-20 gallery-image" ng-src="./img/{{project.images[0]}}"/>
+        </div>
+        <div flex flex-md flex-sm style="height:100px;">
+            <span class="serif-text gallery-body-text" ng-click="viewProject(project.id)">
+                {{project.description}}
+            </span>
+        </div>
+    </div>
+    <div class="gallery-view-more" ng-click="viewProject(project.id)">
+        <i class="fa fa-angle-right m-r-10"></i><strong>See the project</strong>
+    </div>
+</div>

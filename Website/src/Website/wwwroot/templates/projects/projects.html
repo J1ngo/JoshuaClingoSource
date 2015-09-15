@@ -1,0 +1,43 @@
+﻿<div ng-controller="projectsCtrl" class="software">
+    <img src="../../img/projects-construction.jpg" class="bg-full" />
+    <div class="container">
+            <div class="fixed top-0 full-height minor-banner-container" layout="row">
+                <div flex class="w-100 minor-banner" ng-hide="waypoint.content.flags.on" layout="column" layout-align="center center">
+                    <div class="main-title m-t-20 m-b-20 sans-text">
+                        Projects
+                    </div>
+                    <div class="main-subtitle serif-text">
+                        See what we've been working on with our clients
+                    </div>
+                    <div layout="row" layout-align="center center" class="w-100 p-t-50">
+                        <div class="circle-outline" layout layout-align="center center" scroll-to="content">
+                            <i class="fa fa-angle-down arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="minor-content" id="content" zum-waypoint="waypoint.content" down="flags.on" up="flags.off" offset="60%">
+
+            <project id="project" project="selectedProject"></project>
+
+            <div layout layout-md="column" layout-sm="column" class="row-height-300 row no-border-left no-border-bottom no-border-top">
+                <div flex="33" ng-repeat="project in projects" ng-show="project.id !== selectedProject.id" flex-md="100" flex-sm="100" class="row no-border-left no-border-bottom no-border-top" layout layout-align="center center" ng-click="selectProject(project.id)" scroll-to="project">
+                    <div class="row-padding">
+                        <div class="block-category"><strong>News /</strong> 1 MONTH AGO</div>
+                        <div class="block-title">{{project.title}}</div>
+                        <div class="block-more"><i class="fa fa-angle-right m-r-10"></i><strong>Read more</strong></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div dcg-footer></div>
+
+
+</div>

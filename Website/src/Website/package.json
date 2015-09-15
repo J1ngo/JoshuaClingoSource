@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "name": "JoshuaClingo",
+  "devDependencies": {
+    "require": "*",
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-sass": "*",
+    "load-grunt-tasks": "*",
+    "grunt-postcss": "*",
+    "autoprefixer" : "*"
+  }
+}

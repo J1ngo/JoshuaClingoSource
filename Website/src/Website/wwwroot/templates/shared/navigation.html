@@ -1,0 +1,43 @@
+﻿<div class="cover" ng-class="showNavigation ? 'open' : 'closed'" layout layout-sm>
+
+    <div flex layout hide-md hide-sm class="navigation-left-wrapper">
+        <div flex layout layout-align="center center" ng-hide="!showNavigation" class="bg-light-tan navigation-left">
+            <div flex layout="column" layout-align="space-between start" class="full-vertical-height">
+                <div></div>
+                <div class="navigation-description serif-text">
+                    Database Consulting Group (DCG) is a right-sized consulting firm driven to architect and construct quality, data-driven business solutions
+                </div>
+                <div class="navigation-footer">
+                    <span>
+                        220 W 540 N Orem, UT 84057
+                    </span>
+                    <a class="m-l-20" href="mailto:info@databasecg.com?Subject=Information">
+                        info@databasecg.com
+                    </a>
+                    <span class="navigation-social">
+                        <a class="fa fa-facebook" href="https://www.facebook.com/pages/Database-Consulting-Group/131156316912097" target="_blank"></a>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/company/1984326?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A1984326%2Cidx%3A1-1-1%2CtarId%3A1441309643633%2Ctas%3Adatabase%20consulting%20group" target="_blank"></a>
+                        <a class="fa fa-twitter" href="https://twitter.com/DatabaseCG" target="_blank"></a>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div flex="40" flex-md="100" flex-sm="100" layout="row" class="navigation-right-wrapper">
+        <div flex layout layout-md="column" layout-sm="column" layout-align="start center" layout-align-md="center start" layout-align-sm="center start" class="bg-dark-gray  navigation-right" ng-hide="!showNavigation">
+            <div class="navigation-menu">
+                <div class="navigation-menu-item" ng-class="containsPath(relativePath.welcome.base) ? 'selected' : 'unselected'" ng-click="navigate(relativePath.welcome.base); showNavigation = false">Home</div>
+                <div class="navigation-menu-item" ng-class="containsPath(relativePath.news.base) ? 'selected' : 'unselected'" ng-click="navigate(relativePath.news.base); showNavigation = false">News</div>
+                <div class="navigation-menu-item" ng-class="containsPath(relativePath.organization.base) ? 'selected' : 'unselected'" ng-click="navigate(relativePath.organization.base); showNavigation = false">Organization</div>
+                <div class="navigation-menu-item" ng-class="containsPath(relativePath.projects.base) ? 'selected' : 'unselected'" ng-click="navigate(relativePath.projects.base); showNavigation = false">Projects</div>
+                <div class="navigation-menu-item" ng-class="containsPath(relativePath.software.base) ? 'selected' : 'unselected'" ng-click="navigate(relativePath.software.base); showNavigation = false">Software</div>
+                <div class="navigation-menu-item" ng-class="containsPath(relativePath.contact.base) ? 'selected' : 'unselected'" ng-click="navigate(relativePath.contact.base); showNavigation = false;">Contact</div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>

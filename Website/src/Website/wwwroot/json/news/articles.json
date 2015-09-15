@@ -1,0 +1,25 @@
+﻿[
+    {
+    "id": "1",
+    "date":  "2011-03-31",
+    "title": "Dataphor 3.0 is production ready!",
+    "category":  "Software",
+    "description": "Major Dataphor Revision brings major improvements",
+    "body": "Along with addressing a number of defects, the new release includes:<ul><li>Upgrade to .Net 4.0. Dataphor now runs on the latest version of .Net.<br />- 64 bit support. Dataphor no longer runs in WOW32 on 64 bit platforms, it now runs in native 64 bit mode. Including the catalog. The correct SQL Server Compact Edition version is selected at runtime.</li><li>The caching strategy has been optimized to include the concept of “popularity”. Instead of the standard FIFO stack, the cache has been split into two segments. New items enter at the top of the second segment, which is a standard FIFO stack, with promotion: if an item in the second segment is referenced, it is promoted to the head of the first segment. The first segment is also a standard FIFO stack, with promotion: subsequent references to an item in the first segment promote the item to the head of the first segment. When a “popular” item, through competition with other “popular” items, is pushed off the first segment it is demoted to the head of the second segment, where it competes for a position in the second segment. Items that are pushed off the second segment are no longer cached.</li><li>Connections have been optimized. The connection management for the entire SQLDevice layer has been updated to release connections earlier, resulting in better use of connection pooling and a significant reduction in the number of open connections. Also, browse cursors have been updated to release their connection at EOF, freeing resources earlier. </li><li>The latest build will be available for download soon. See dataphor.org for more details.</li></ul>",
+    "images": [
+      "blue-server-room.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "date": "2015-09-04",
+    "title": "Website Redesign",
+    "category": "Internet",
+    "description": "New company website",
+    "body": "DCG is proud to announce our latest major website redesign. Incidentally, you're looking at it.",
+    "images": [
+      "news-website-redesign.png"
+    ]
+  }
+
+]

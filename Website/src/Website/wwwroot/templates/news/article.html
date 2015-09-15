@@ -1,0 +1,9 @@
+﻿<div class="article-selected" layout="column" layout-align="center center">
+    <img class="article-selected-image" src="../../img/{{article.images[0]}}"/>
+    <div class="article-selected-text">
+        <div class="article-selected-title">{{article.title}}</div>
+        <div class="article-selected-description">{{article.description}}</div>
+        <div class="article-selected-body serif-text m-t-30" ng-bind-html="article.body | sanitize"></div>
+    </div>
+    
+</div>

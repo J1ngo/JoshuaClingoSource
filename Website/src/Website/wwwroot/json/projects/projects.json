@@ -1,0 +1,35 @@
+﻿[
+  {
+    "id": "FSR",
+    "title": "Fantasy Ski Racer",
+    "category":  "Mobile Entertainment",
+    "description": "Cross-platform fantasy league for the professional alpine skiing",
+    "url": "https://www.fantasyskiracer.com",
+    "body": "",
+    "images": [
+      "fantasy-ski-racer.png"
+    ]
+  },
+  {
+    "id": "FreedomNational",
+    "title": "Freedom National Insurance",
+    "category": "Insurance",
+    "url":  "https://freedomgeneral.com/",
+    "description": "Integrated car insurance rating portal and services",
+    "body": "",
+    "images": [
+      "freedom-national.png"
+    ]
+  },
+    {
+    "id": "OSIA",
+    "title": "OSIA Medical",
+    "category": "Medical",
+    "url":  "http://osiamedical.com/",
+    "description": "Bridging the gap between patient visits",
+    "body": "<h3>Goal</h3><p>Provide longitudinal patient health data and care tools to healthcare providers</p><h3>Accomplishments</h3><ul><li>Architected and implemented cutting-edge platform to support the requirement for secure, available data and to provide a common interface for various implementation arms.</li><li>Designed, architected, and deployed iOS, Android, and Windows phone Health Ally and Asthma Ally apps to allow for transmission of patient data to providers. In addition to transmitting their health data, patients may also interface directly with medical staff via unique and secure messaging system.</li><li>Designed, architected, and deployed Health Ally Medical Portal to utilize medical data being sent via Health Ally and Asthma Ally apps.</li><li>Implemented EHR-embedded extension of medical portal, utilizing latest common standards for reading real patient data across patient record systems.</li><li>Constructed pollen data syndication database and system to capture pollen information from available pollen collection stations across the United States.</li></ul>",
+    "images": [
+      "osia-medical.png"
+    ]
+  }
+]

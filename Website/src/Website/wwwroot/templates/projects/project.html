@@ -1,0 +1,10 @@
+﻿<div class="project-selected" layout="column" layout-align="center start">
+    <img class="project-selected-image" src="../../img/{{project.images[0]}}" />
+    <div class="project-selected-text">
+        <div class="project-selected-title">{{project.title}}</div>
+        <div class="project-selected-description">{{project.description}}</div>
+        <div class="project-selected-body serif-text m-t-30" ng-bind-html="project.body | sanitize"></div>
+        <a class="button" href="{{project.url}}">View the results</a>
+    </div>
+
+</div>
