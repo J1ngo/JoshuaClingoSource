@@ -4,10 +4,10 @@
     <div class="header-backdrop" ng-show="header.off"></div>
     <div zum-waypoint="waypoint.top" style="color: white" down="flags.on" up="flags.off" offset="-100%" id="top" class="header" ng-class="header.off ? 'header-body' : 'header-top'" layout="row" layout-align="start center">
         <div class="company-logo" ng-show="!showNavigation" ng-click="navigate(relativePath.welcome.base); showNavigation = false">
-            <md-icon class="company-logo-icon" md-svg-src="../../img/icons/dcg-logo-light.svg" aria-label="DCG Logo"></md-icon>
+            <md-icon class="company-logo-icon" md-svg-src="../../img/icons/dcg-logo-light.svg" aria-label="JoshuaClingo Logo"></md-icon>
         </div>
         <div class="company-logo" hide-md hide-sm ng-show="showNavigation" ng-click="navigate(relativePath.welcome.base); showNavigation = false">
-            <md-icon class="company-logo-icon" md-svg-src="../../img/icons/dcg-logo-dark.svg" aria-label="DCG Logo"></md-icon>
+            <md-icon class="company-logo-icon" md-svg-src="../../img/icons/dcg-logo-dark.svg" aria-label="JoshuaClingo Logo"></md-icon>
         </div>
         <div flex></div>
         <div layout layout-align="center center" class="header-menu" style="cursor: pointer;" ng-click="toggleNavigation()">

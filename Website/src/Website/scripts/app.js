@@ -1,17 +1,14 @@
-﻿var app = angular.module('DCG', [
+﻿var app = angular.module('JoshuaClingo', [
 	'ngRoute',
     'ngAnimate',
     'ngMaterial',
     'ngTouch',
-    'angular-carousel',
     'zumba.angular-waypoints',
     'smoothScroll',
-    'ui.odometer',
-    'ngMap',
-	'DCGServices',
-    'DCGFilters',
-    'DCGDirectives',
-    'DCGControllers'
+	'JCServices',
+    'JCFilters',
+    'JCDirectives',
+    'JCControllers'
 ]);
 
 app.config(['$locationProvider', '$httpProvider', '$routeProvider', '$logProvider', 'appSettings',

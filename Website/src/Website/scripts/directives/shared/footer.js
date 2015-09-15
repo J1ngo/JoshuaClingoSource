@@ -1,4 +1,4 @@
-﻿directives.directive("dcgFooter", ["$timeout", function ($timeout) {
+﻿directives.directive("jcFooter", ["$timeout", function ($timeout) {
     return {
         restrict: "A",
         replace: true,

@@ -1,2 +1,2 @@
 ﻿"use strict";
-var directives = angular.module("DCGDirectives", []);
+var directives = angular.module("JCDirectives", []);

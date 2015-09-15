@@ -1,2 +1,2 @@
 ﻿'use strict';
-var controllers = angular.module('DCGControllers', []);
+var controllers = angular.module('JCControllers', []);

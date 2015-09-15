@@ -1,2 +1,2 @@
 ﻿"use strict";
-var services = angular.module("DCGServices", []);
+var services = angular.module("JCServices", []);

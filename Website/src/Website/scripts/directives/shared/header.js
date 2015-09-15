@@ -1,4 +1,4 @@
-﻿directives.directive("dcgHeader", ["$timeout", function ($timeout) {
+﻿directives.directive("jcHeader", ["$timeout", function ($timeout) {
 	return {
 		restrict: "A",
 		replace: true,

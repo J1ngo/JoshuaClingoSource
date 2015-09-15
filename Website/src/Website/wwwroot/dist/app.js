@@ -6998,20 +6998,17 @@ makeSwipeDirective('ngSwipeRight', 1, 'swiperight');
         .directive('zumWaypoint', ['WaypointService', zumWaypoint])
         .service('WaypointService', ['$timeout', WaypointService]);
 }));
-var app = angular.module('DCG', [
+var app = angular.module('JoshuaClingo', [
 	'ngRoute',
     'ngAnimate',
     'ngMaterial',
     'ngTouch',
-    'angular-carousel',
     'zumba.angular-waypoints',
     'smoothScroll',
-    'ui.odometer',
-    'ngMap',
-	'DCGServices',
-    'DCGFilters',
-    'DCGDirectives',
-    'DCGControllers'
+	'JCServices',
+    'JCFilters',
+    'JCDirectives',
+    'JCControllers'
 ]);
 
 app.config(['$locationProvider', '$httpProvider', '$routeProvider', '$logProvider', 'appSettings',
@@ -7082,13 +7079,15 @@ app.run(["$rootScope", "$location", function ($rootScope, $location) {
 }]);
 app.constant('appSettings', {
 	//GLOBAL SWITCHES
-    'DEBUG': 'FALSE',
+    'DEBUG': 'FALSE'
 
 });
 "use strict";
-var services = angular.module("DCGServices", []);
+var services = angular.module("JCServices", []);
+
 'use strict';
-var controllers = angular.module('DCGControllers', []);
+var controllers = angular.module('JCControllers', []);
+
 controllers.controller('appCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', '$anchorScroll', '$mdDialog', '$mdSidenav', '$mdUtil', '$log',
 function ($rootScope, $scope, $window, $location, $timeout, $anchorScroll, $mdDialog, $mdSidenav, $mdUtil, $log) {
     $rootScope.loading = 0;
@@ -7563,7 +7562,8 @@ controllers.controller("welcomeCtrl", ["$rootScope", "$scope", "$anchorScroll", 
 
 }]);
 "use strict";
-var directives = angular.module("DCGDirectives", []);
+var directives = angular.module("JCDirectives", []);
+
 directives.directive("article", ["$timeout", function ($timeout) {
 	return {
 		restrict: "E",
@@ -7595,7 +7595,7 @@ directives.directive("project", ["$timeout", function ($timeout) {
 	    }
 	};
 }]);
-directives.directive("dcgFooter", ["$timeout", function ($timeout) {
+directives.directive("jcFooter", ["$timeout", function ($timeout) {
     return {
         restrict: "A",
         replace: true,
@@ -7612,7 +7612,7 @@ directives.directive("dcgFooter", ["$timeout", function ($timeout) {
         }
     };
 }]);
-directives.directive("dcgHeader", ["$timeout", function ($timeout) {
+directives.directive("jcHeader", ["$timeout", function ($timeout) {
 	return {
 		restrict: "A",
 		replace: true,
@@ -7701,7 +7701,8 @@ directives.directive("viewTitle", ['$rootScope', function ($rootScope) {
     }
 ]);
 "use strict";
-var filters = angular.module("DCGFilters", []);
+var filters = angular.module("JCFilters", []);
+
 filters.filter("sanitize", ['$sce', function ($sce) {
     return function (htmlCode) {
         return $sce.trustAsHtml(htmlCode);

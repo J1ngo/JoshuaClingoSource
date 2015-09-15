@@ -1,2 +1,2 @@
 ﻿"use strict";
-var filters = angular.module("DCGFilters", []);
+var filters = angular.module("JCFilters", []);

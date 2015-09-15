@@ -383,7 +383,7 @@ position: fixed;
 
 .button {
     transition: 300ms ease-out;
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.61111em;
@@ -395,51 +395,6 @@ position: fixed;
     color: #ccc;
     border: 1px solid #ccc;
     border-radius: 20px;
-}
-
-.gallery-carousel {
-    height:400px;
-    width: 100%;
-}
-
-.gallery-title {
-    height: 2.3em;
-    color: #333;
-    overflow: hidden;
-    margin-bottom: 20px;
-    transition: all 300ms ease-out;
-    -webkit-transition: all 300ms ease-out;
-    font-size: 2.22222em;
-    line-height: 1.125em;
-}
-
-.gallery-category{
-    margin-bottom: 40px;
-    color: #ccc;
-    font-size: 0.61111em;
-    line-height: 1.36364em;
-    text-transform: uppercase;
-}
-
-.gallery-body-text{
-    color:rgb(51, 51, 51);
-}
-
-.gallery-view-more{
-    display: inline-block;
-    margin-top: 20px;
-    color: #999;
-    font-size: 0.77778em;
-    line-height: 1.64286em;
-    transition: all 300ms ease-out;
-}
-
-.gallery-view-more:hover{
-    color:#FF5722;
-}
-
-.gallery-view-more:hover, .gallery-body-text:hover, .gallery-category:hover, .gallery-title:hover, .gallery-image:hover{
-    cursor:pointer;
 }
 
 .block-title{
@@ -709,9 +664,6 @@ position: fixed;
 
 
 
-
-
-
 @media (max-width: 599px)
 {
     .row {
@@ -722,10 +674,6 @@ position: fixed;
 
     .row-inner {
         padding: 0 40px !important;
-    }
-
-    .rn-carousel-controls {
-        display: none !important;
     }
 
     .row-filler{
