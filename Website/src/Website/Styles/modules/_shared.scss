@@ -1,0 +1,332 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+/* Document level adjustments */
+html {
+  font-size: 100%;
+}
+@media (max-width: 900px) {
+  html { font-size: 90%; }
+}
+@media (max-width: 400px) {
+  html { font-size: 80%; }
+}
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+    background: #dfecf7;
+}
+
+body {
+    background-size: 100% 100%;
+    color: #313534;
+    -ms-overflow-style: scrollbar;
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Type will scale with modules */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.btn {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.btn-flat, .btn-icon-toggle {
+    background-color: transparent;
+    font-weight: 500;
+    border-color: transparent;
+}
+
+.btn:active, .btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.btn-flat:active, .btn-icon-toggle:active, .btn-flat.active, .btn-icon-toggle.active {
+    background-color: rgba(12, 12, 12, 0.25);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.btn-flat:hover, .btn-icon-toggle:hover, .btn-flat:focus, .btn-icon-toggle:focus, .open .dropdown-toggle.btn-flat, .open .dropdown-toggle.btn-icon-toggle {
+    background-color: rgba(12, 12, 12, 0.07);
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: inherit;
+}
+
+.btn-icon-toggle {
+    padding: 0;
+    width: 36px;
+    border-radius: 100% !important;
+}
+
+.btn-push {
+    box-sizing: border-box;
+    color: currentColor;
+    user-select: none;
+    position: relative;
+    outline: 0;
+    border-radius:3px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    display: inline-block;
+    align-items: center;
+    padding: 0 12px;
+    line-height: 52px;
+    min-height: 36px;
+    background: 0 0;
+    white-space: nowrap;
+    min-width: 88px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    /*transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);*/
+}
+
+.btn-push:active{
+    top:1px;
+}
+
+.btn-push[md-ink-ripple] {
+    position: relative;
+}
+
+/*Forms*/
+
+.form .form-group, .form-inline .form-group {
+    padding-top: 16px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 19px;
+}
+
+.forHDR {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    float: left;
+}
+
+.gui-icon {
+    width: 40px;
+    height: 40px;
+    color: #7491ab;
+    font-size: 1.2em;
+    overflow: hidden;
+    border-radius: 100%;
+    transition: all 0.15s linear;
+}
+
+.gui-icon:hover {
+    background-color: rgba(12, 12, 12, 0.07);
+    color: #4e6a84;
+}
+
+.container-large {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card-container {
+    width: 100%;
+    height: auto;
+}
+
+.card-container.clickable:hover {
+    cursor: pointer;
+}
+
+.card {
+    color: #304354;
+}
+
+.card-title {
+    color: #7491ab;
+    line-height: 1.3em;
+    font-size: 1.3em
+}
+
+.card-title-login {
+    background-color: #bfd6e8;
+    border-color: #bfd6e8;
+    color: #7a96af;
+}
+
+.card-title-dark {
+    background-color: #7491ab;
+    border-color: #7491ab;
+    color: #ffffff;
+}
+
+.divider {
+    border-top-color: rgba(116, 145, 171, 0.4);
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.header-row {
+    opacity: 0.75;
+    color: #7491ab;
+    font-weight: 500;
+    padding: 10px 8px;
+    line-height: 1.846153846;
+}
+
+.header-row  > .column {
+
+}
+
+.table .row:nth-child(2n+1) {
+    background-color: rgba(232, 241, 249, 1);
+}
+
+.table > .row > .column {
+    padding: 10px 8px;
+    line-height: 1.846153846;
+    vertical-align: top;
+    border-top: 1px solid rgba(189, 193, 193, 0.2);
+}
+
+.toolbar-compensation {
+    padding-top: 64px;
+}
+
+.sidenav-compensation.unlocked {
+    padding-left: 64px;
+}
+
+.sidenav-compensation.locked {
+    padding-left: 240px;
+}
+
+.content-padding {
+    padding: 25px;
+}
+
+.substitute-label {
+    color: rgba(0,0,0,0.54);
+}
+
+.map-container {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.map-container.visible {
+    opacity: 1;
+}
+
+.alert {
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 9px 19px 9px 15px;
+    border-radius: 3px;
+    font-size: 13px;
+    border-width: 0;
+    transition: all 0.2s linear 0s;
+}
+
+.alert-danger, .alert-error {
+    background-color: #fbdde0;
+    color: #8e333d;
+    border-color: #8e333d;
+}
+
+.accordion {
+    overflow:hidden;
+    display:block;
+    position:relative;
+}
+
+.accordion.open .accordion-top i {
+    animation: 0.25s rotateCounterQuarter linear;
+    transform: rotate(-90deg);
+}
+
+.accordion.closed .accordion-top i {
+    animation: 0.25s rotateClockQuarter linear;
+    transform: rotate(0deg);
+}
+
+.accordion .accordion-content {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+    transition-property: height;
+    z-index: 1;
+    transition: height 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+    list-style: none;
+}
+
+.accordion.open .accordion-content {
+    height: 100%;
+    opacity: 1;
+    /*display: block;*/
+}
+
+.date-picker-wrapper ng-combo-date-picker select {
+    background: transparent;
+    padding: 5px;
+    font-size: 1em;
+    line-height: 1em;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.12);
+    border-radius: 0;
+    height: 100%;
+}
+
+.input-row {
+    min-height: 100px;
+}
+
+/*Overwrites*/
+
+.fa {
+    font-size: 1em;
+}

@@ -1,15 +1,18 @@
 {
-  "version": "1.0.0",
-  "name": "JoshuaClingo",
+  "version": "0.1.0",
+  "name": "joshuaclingo",
   "devDependencies": {
     "require": "*",
-    "grunt": "*",
-    "grunt-contrib-concat": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-sass": "*",
-    "load-grunt-tasks": "*",
-    "grunt-postcss": "*",
-    "autoprefixer" : "*"
+    "autoprefixer": "*",
+    "gulp": "*",
+    "del": "*",
+    "gulp-sass": "*",
+    "yargs": "*",
+    "gulp-if": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "gulp-util": "*",
+    "gulp-autoprefixer": "*",
+    "browser-sync": "*"
   }
 }

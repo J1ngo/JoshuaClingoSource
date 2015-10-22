@@ -2,3 +2,5 @@
 *.dll
 *.user
 *.scssc
+/Website/src/Website/bower_components
+/Website/src/Website/node_modules

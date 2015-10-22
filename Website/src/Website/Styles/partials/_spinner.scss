@@ -1,0 +1,97 @@
+﻿.spinner-container .theater {
+    height: 100vh;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+}
+
+.spinner-container .no-theater {
+    height: 100%;
+    width: 100%;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+    padding:20px;
+}
+
+.spinner-overlay.theater
+{
+    background-color: rgba(0,0,0,0.6); 
+    height: 100%;
+    width: 100%;
+}
+
+.spinner-overlay .fa {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.spinner-overlay.no-theater .fa {
+    color: #0091ff;
+}
+
+/*.spinner-overlay.no-theater{
+    background-color: rgba(255,255,255,0.3);
+    padding: 30px;
+    position: relative;
+	z-index: 0;
+}*/
+
+.spinner-overlay.is-button .fa {
+    font-size: inherit;
+    color: #ffffff;
+}
+
+.spinner-overlay.is-button{
+    background-color: transparent;
+    padding: 0;
+	z-index: 0;
+}
+
+/* sponsor spinner animations*/
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1,1);
+    }
+    50% {
+        -webkit-transform: scale(.8, .8);
+    }
+    100% {
+        -webkit-transform: scale(1,1);
+    }
+}
+@-moz-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1,1);
+    }
+    50% {
+        -webkit-transform: scale(.8, .8);
+    }
+    100% {
+        -webkit-transform: scale(1,1);
+    }
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1,1);
+    }
+    50% {
+        -webkit-transform: scale(.8, .8);
+    }
+    100% {
+        -webkit-transform: scale(1,1);
+    }
+}
+
+.animate-pulse{
+    -webkit-animation: pulse .5s infinite; /* Safari 4+ */
+    -moz-animation:    pulse .5s infinite; /* Fx 5+ */
+    animation:         pulse .5s infinite; /* IE 10+, Fx 29+ */
+}
