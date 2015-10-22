@@ -3,12 +3,6 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
-    "angular-animate": "*",
-    "angular-aria": "*",
-    "angular-route": "*",
-    "angular-touch": "*",
-    "ngSmoothScroll": "*",
-    "waypoints": "*"
 
   },
   "resolutions": {
